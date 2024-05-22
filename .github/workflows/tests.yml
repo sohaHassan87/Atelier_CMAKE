@@ -103,5 +103,8 @@ jobs:
             mkdir build
             cd build
             cmake ..
-            make
             make test_Mul
+            make test_Div
+            make test_Car
+            make test_Sub
+            make test_Add
