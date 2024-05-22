@@ -11,7 +11,7 @@ int main(int argc, char *argv[]){
 	char* b = argv[3];
 	double r = 0;
 	if (strcmp(op, "add") == 0) {
-		r = _add(atof(a), atof(b));
+		r = _add(atof(a));
 		printf("%lf",r);
 	}
 	else if (strcmp(op, "sub") == 0) {
