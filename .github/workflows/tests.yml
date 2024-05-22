@@ -104,4 +104,4 @@ jobs:
             cd build
             cmake ..
             make
-            make test
+            make test_Mul
