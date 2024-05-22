@@ -10,7 +10,13 @@ int main(int argc, char *argv[]){
 	char* a = argv[2];
 	char* b = argv[3];
 	double r = 0;
-	if (strcmp(op, "add") == 0) {
+
+		if (strcmp(op, "car") == 0) {
+		r = _add(atof(a));
+		printf("%lf",r);
+	}
+		
+	else if (strcmp(op, "add") == 0) {
 		r = _add(atof(a), atof(b));
 		printf("%lf",r);
 	}
