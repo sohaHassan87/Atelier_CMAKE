@@ -12,7 +12,7 @@ int main(int argc, char *argv[]){
 	double r = 0;
 
 		if (strcmp(op, "car") == 0) {
-		r = _add(atof(a));
+		r = _car(atof(a));
 		printf("%lf",r);
 	}
 		
