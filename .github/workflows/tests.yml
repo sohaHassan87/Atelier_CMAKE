@@ -89,13 +89,14 @@ jobs:
           cd build
           cmake ..
           make
-          ./src/calculator add 10 5
+          ./src/calculator Mul 10 5
 
           
   deployement:
       runs-on: ubuntu-latest
+      needs: Test_Mul 
       steps:
-        - name: deployment
+        - name: Test fonction add
           run: |
             last_directory=$(basename ${{ runner.workspace }})
             git clone https://github.com/${{ github.repository }}.git
@@ -103,8 +104,7 @@ jobs:
             mkdir build
             cd build
             cmake ..
-            make test_Mul
-            make test_Div
-            make test_Car
-            make test_Sub
-            make test_Add
+            make
+            
+
+         
